@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1775235442461-8186",
+    "parkId": "US-9531",
+    "callsign": "AI7LF",
+    "logType": "hunted",
+    "date": "2026-04-03",
+    "loggedAt": "2026-04-03T16:57:22.461Z"
+  },
+  {
+    "id": "1775235451212-2520",
+    "parkId": "US-10472",
+    "callsign": "AI7LF",
+    "logType": "activation",
+    "date": "2026-04-03",
+    "loggedAt": "2026-04-03T16:57:31.212Z"
+  },
+  {
+    "id": "1775235466250-8039",
+    "parkId": "US-13078",
+    "callsign": "N7CQR",
+    "logType": "activation",
+    "date": "2026-04-03",
+    "loggedAt": "2026-04-03T16:57:46.250Z"
+  }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "id":  "US-9531",
+        "name":  "Bonnie Lure State Recreation Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-13086",
+        "name":  "Eagle Creek National Fish Hatchery",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10506",
+        "name":  "Estacada- Boring State Trail",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10355",
+        "name":  "I-205 Multi-Use State Trail",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10472",
+        "name":  "Marmot BLM Recreation Management Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2843",
+        "name":  "Milo McIver State Park",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9981",
+        "name":  "Molalla River Corridor BLM Recreation Management Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2844",
+        "name":  "Molalla River State Park",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10249",
+        "name":  "Salmon River National Wild and Scenic River",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10473",
+        "name":  "Sandy Ridge BLM Recreation Management Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10390",
+        "name":  "Sandy State Fish Hatchery",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9982",
+        "name":  "Table Rock Wilderness Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-10359",
+        "name":  "Wildwood Recreation Site BLM Recreation Management Area",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2809",
+        "name":  "Ainsworth State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9524",
+        "name":  "Angel\u0027s Rest State Trail",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9530",
+        "name":  "Benson State Recreation Area",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-12979",
+        "name":  "Bonneville State Fish Hatchery",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-12747",
+        "name":  "Bridal Veil Falls State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-13078",
+        "name":  "Cascade State Fish Hatchery",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9537",
+        "name":  "Dabney State Recreation Area",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9551",
+        "name":  "Government, Lemon, and McGuire Islands State Recreation Area",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2830",
+        "name":  "Guy W. Talbot State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9558",
+        "name":  "John B. Yeon State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9978",
+        "name":  "Lewis and Clark State Recreation Area",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9979",
+        "name":  "Portland Women\u0027s Forum State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2850",
+        "name":  "Rooster Rock State Park",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9144",
+        "name":  "Tryon Creek State Natural Area",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9584",
+        "name":  "Willamette Stone State Historic Site",
+        "county":  "Multnomah",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9528",
+        "name":  "Banks-Vernonia State Trail",
+        "county":  "Washington",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-2838",
+        "name":  "L.L. Stub Stewart State Park",
+        "county":  "Washington",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-0508",
+        "name":  "Tualatin River National Wildlife Refuge",
+        "county":  "Washington",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-9984",
+        "name":  "Tualatin River Water National Scenic Trail",
+        "county":  "Washington",
+        "state":  "OR"
+    }
+]
