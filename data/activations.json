@@ -22,5 +22,37 @@
     "logType": "activation",
     "date": "2026-04-03",
     "loggedAt": "2026-04-03T16:57:46.250Z"
+  },
+  {
+    "id": "1775241814280-100",
+    "parkId": "US-9524",
+    "callsign": "KK7OVF",
+    "logType": "hunted",
+    "date": "2026-04-16",
+    "loggedAt": "2026-04-03T18:43:34.280Z"
+  },
+  {
+    "id": "1775242750202-6079",
+    "parkId": "US-12747",
+    "callsign": "KK7OVF",
+    "logType": "activation",
+    "date": "2025-12-01",
+    "loggedAt": "2026-04-03T18:59:10.203Z"
+  },
+  {
+    "id": "1775258269787-1564",
+    "parkId": "US-10390",
+    "callsign": "KK7OVF",
+    "logType": "activation",
+    "date": "2026-04-09",
+    "loggedAt": "2026-04-03T23:17:49.787Z"
+  },
+  {
+    "id": "1775495323151-6430",
+    "parkId": "US-9524",
+    "callsign": "KK7OVF",
+    "logType": "hunted",
+    "date": "2026-04-15",
+    "loggedAt": "2026-04-06T17:08:43.151Z"
   }
 ]

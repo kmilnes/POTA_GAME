@@ -4,8 +4,6 @@ const parkSelect = document.getElementById("park");
 const globalProgressEl = document.getElementById("global-progress");
 const countyProgressEl = document.getElementById("county-progress");
 const callsignTallyEl = document.getElementById("callsign-tally");
-const activatedListEl = document.getElementById("activated-list");
-const huntedListEl = document.getElementById("hunted-list");
 const unactivatedListEl = document.getElementById("unactivated-list");
 const activationLogEl = document.getElementById("activation-log");
 
@@ -106,53 +104,42 @@ function renderProgress() {
 }
 
 function renderParkLists() {
-  const activated = state.parks.filter((p) => p.activated).sort(byCountyThenName);
-  const hunted = state.parks.filter((p) => p.hunted).sort(byCountyThenName);
-  const unactivated = state.parks.filter((p) => !p.activated).sort(byCountyThenName);
-
-  activatedListEl.innerHTML =
-    activated.length === 0
-      ? '<p class="empty">No parks activated yet.</p>'
-      : activated
-          .map(
-            (park) => `
-        <article class="park-item">
-          <strong>${sanitize(park.name)} (${sanitize(park.id)})</strong>
-          <div class="meta">${sanitize(park.county)} County</div>
-          <div class="meta">Activators: ${sanitize(park.activators.join(", ")) || "-"}</div>
-        </article>
-      `,
-          )
-          .join("");
-
-  huntedListEl.innerHTML =
-    hunted.length === 0
-      ? '<p class="empty">No parks hunted yet.</p>'
-      : hunted
-          .map(
-            (park) => `
-        <article class="park-item">
-          <strong>${sanitize(park.name)} (${sanitize(park.id)})</strong>
-          <div class="meta">${sanitize(park.county)} County</div>
-          <div class="meta">Hunters: ${sanitize(park.hunters.join(", ")) || "-"}</div>
-        </article>
-      `,
-          )
-          .join("");
+  const allParks = [...state.parks].sort(byCountyThenName);
 
   unactivatedListEl.innerHTML =
-    unactivated.length === 0
-      ? '<p class="empty">Every park is activated. Great work!</p>'
-      : unactivated
-          .map(
-            (park) => `
-        <article class="park-item">
-          <strong>${sanitize(park.name)} (${sanitize(park.id)})</strong>
-          <div class="meta">${sanitize(park.county)} County</div>
-        </article>
-      `,
-          )
-          .join("");
+    allParks.length === 0
+      ? '<p class="empty">No parks available.</p>'
+      : `
+        <div class="status-table-wrap">
+          <table class="status-table">
+            <thead>
+              <tr>
+                <th>Park</th>
+                <th>County</th>
+                <th>Activated</th>
+                <th>Hunted</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${allParks
+                .map(
+                  (park) => `
+                <tr>
+                  <td>
+                    <strong>${sanitize(park.name)}</strong>
+                    <div class="meta">${sanitize(park.id)}</div>
+                  </td>
+                  <td>${sanitize(park.county)}</td>
+                  <td class="status-cell">${park.activated ? '<span class="status-mark is-checked">&#10003;</span>' : '<span class="status-mark">&nbsp;</span>'}</td>
+                  <td class="status-cell">${park.hunted ? '<span class="status-mark is-checked">&#10003;</span>' : '<span class="status-mark">&nbsp;</span>'}</td>
+                </tr>
+              `,
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
 }
 
 function renderActivationLog() {

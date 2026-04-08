@@ -39,13 +39,13 @@
             </label>
           </div>
 
-          <label for="callsign">Activator Callsign</label>
+          <label for="callsign">Activator/Hunter Callsign</label>
           <input id="callsign" name="callsign" type="text" placeholder="ex: K7ABC" required />
 
           <label for="park">Park</label>
           <select id="park" name="parkId" required></select>
 
-          <label for="date">Date</label>
+          <label for="date">Date UTC</label>
           <input id="date" name="date" type="date" />
 
           <button type="submit">Submit Entry</button>
@@ -65,17 +65,7 @@
       </section>
 
       <section class="panel list-panel">
-        <h2>Activated Parks</h2>
-        <div id="activated-list" class="park-list"></div>
-      </section>
-
-      <section class="panel list-panel">
-        <h2>Hunted Parks</h2>
-        <div id="hunted-list" class="park-list"></div>
-      </section>
-
-      <section class="panel list-panel">
-        <h2>Not Yet Activated</h2>
+        <h2>All Parks Status</h2>
         <div id="unactivated-list" class="park-list"></div>
       </section>
 
