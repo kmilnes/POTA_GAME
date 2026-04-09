@@ -43,9 +43,25 @@ async function fetchData() {
 function renderParkSelector() {
   const sorted = [...state.parks].sort(byCountyThenName);
 
-  parkSelect.innerHTML = sorted
-    .map((park) => `<option value="${park.id}">${sanitize(park.name)} (${sanitize(park.county)})</option>`)
+  const placeholder = '<option value="" disabled selected>Pick a Park</option>';
+  const parkOptions = sorted
+    .map((park) => {
+      let statusLabel = "";
+      if (park.activated && park.hunted) {
+        statusLabel = " ACTIVATED & HUNTED";
+      } else if (park.activated) {
+        statusLabel = " ACTIVATED";
+      } else if (park.hunted) {
+        statusLabel = " HUNTED";
+      }
+
+      const isLocked = park.activated && park.hunted;
+      const disabledAttr = isLocked ? " disabled" : "";
+      return `<option value="${park.id}"${disabledAttr}>${sanitize(park.name)} (${sanitize(park.county)})${statusLabel}</option>`;
+    })
     .join("");
+
+  parkSelect.innerHTML = `${placeholder}${parkOptions}`;
 }
 
 function computeCountyStats(parks) {
