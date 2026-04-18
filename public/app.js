@@ -41,7 +41,7 @@ async function fetchData() {
 }
 
 function renderParkSelector() {
-  const sorted = [...state.parks].sort(byCountyThenName);
+  const sorted = [...state.parks].sort((a, b) => a.name.localeCompare(b.name));
 
   const placeholder = '<option value="" disabled selected>Pick a Park</option>';
   const parkOptions = sorted
@@ -57,7 +57,7 @@ function renderParkSelector() {
 
       const isLocked = park.activated && park.hunted;
       const disabledAttr = isLocked ? " disabled" : "";
-      return `<option value="${park.id}"${disabledAttr}>${sanitize(park.name)} (${sanitize(park.county)})${statusLabel}</option>`;
+      return `<option value="${park.id}"${disabledAttr}>${sanitize(park.name)} (${sanitize(park.county)}) ${sanitize(park.id)}${statusLabel}</option>`;
     })
     .join("");
 
@@ -120,7 +120,7 @@ function renderProgress() {
 }
 
 function renderParkLists() {
-  const allParks = [...state.parks].sort(byCountyThenName);
+  const allParks = [...state.parks].sort((a, b) => a.name.localeCompare(b.name));
 
   unactivatedListEl.innerHTML =
     allParks.length === 0
