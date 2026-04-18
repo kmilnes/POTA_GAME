@@ -226,5 +226,23 @@
         "name":  "Lewis and Clark National Historic Trail",
         "county":  "Washington",
         "state":  "OR"
+    },
+    {
+        "id":  "US-3424",
+        "name":  "Ice Age Floods",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-4381",
+        "name":  "Mount Hood National Forest",
+        "county":  "Clackamas",
+        "state":  "OR"
+    },
+    {
+        "id":  "US-4562",
+        "name":  "Pacific Crest Recreation Trail",
+        "county":  "Clackamas",
+        "state":  "OR"
     }
 ]
